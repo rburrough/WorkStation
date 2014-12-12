@@ -1,0 +1,186 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WindowsApplication1
+</name>
+</assembly>
+<members>
+<member name="M:WindowsApplication1.Form_Settings.#ctor">
+	<summary>
+ Default constructor - read xml data, fill out form.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_Settings.Button_Cancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ Close form without saving.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_Settings.Button_Save_Click(System.Object,System.EventArgs)">
+	<summary>
+ Update registry and close form.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_Settings.Button_BackupLocation_Click(System.Object,System.EventArgs)">
+	<summary>
+ Select the default backup location.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:WindowsApplication1.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:WindowsApplication1.Form_WorkStation.IsXP">
+	<summary>
+ Is the OS XP or is it Vista or higher?
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.Button_Start_Click(System.Object,System.EventArgs)">
+	<summary>
+ Calls the Executor to run the selected programs.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.BackgroundWorker1_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ Start background worker thread, disable form.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.BackgroundWorker1_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+	<summary>
+ Update main GUI thread.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.CheckBox_MBAM_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ MBAM
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.CheckBox_EmsiSoft_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ A2CMD
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.CheckBox_MSSE_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ MSSE
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.CheckBox_TDSSKiller_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ TDSSKiller
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.CheckBox9_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ Select All
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.ExitToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Exit the application.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.ConfigureToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Open the settings form to let the user save config info.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.#ctor(System.Windows.Forms.FolderBrowserDialog)">
+	<summary>
+ Constructor.
+ </summary>
+	<param name="FolderBrowser"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.VerifyFiles">
+	<summary>
+ Ensure that all AVs exist.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.Executor(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+	<summary>
+ Runs the given exe with the given arguments
+ </summary>
+	<param name="FileName"></param>
+	<param name="Arguments"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.Button3_Click(System.Object,System.EventArgs)">
+	<summary>
+ Example of downloading a file with a thread.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_WorkStation.Downloader">
+	<summary>
+ Example of how to download - use in daily download script.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_Startup.Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+ Drive selector
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Form_Startup.OpenWorkStation(System.Windows.Forms.FolderBrowserDialog)">
+	<summary>
+ Open Form_WorkStation.vb
+ </summary>
+	<param name="SelectedDrive"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Class_BackupFiles.#ctor">
+	<summary>
+ Default constructor. Populates list of directories to backup. 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Class_CleanTempFiles.#ctor">
+	<summary>
+ Default constructor. Populates list of directories to clean.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.Class_CleanTempFiles.CleanTemp">
+	<summary>
+ Delete temp files in specified directories. 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
